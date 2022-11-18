@@ -2,6 +2,13 @@
 
 This repo demonstrates creating a custom widget using [@arcgis/core](https://www.npmjs.com/package/@arcgis/core) ES modules with Vite. It also includes a basic example of using message bundles to display custom localized strings. 
 
+| :warning:  Deprecation Notice   |
+|-----------------------------------------|
+| This sample is deprecated and it will be removed in a future release. Refer to the [SDK's FAQ](https://developers.arcgis.com/javascript/latest/faq/#how-are-breaking-changes-managed) for more information on breaking changes. When building custom widgets, it is recommended to use the UI component library of your choice. |
+
+## Known issues
+* When using Vite 3, [`"useDefineForClassFields": false`](https://www.typescriptlang.org/tsconfig#useDefineForClassFields) needs to be set in `tsconfig.json`. The ArcGIS JS API requires this setting for the widget's property binding to work.
+
 ## Get Started
 
 **Step 1** - Run `npm install`
@@ -11,7 +18,7 @@ This repo demonstrates creating a custom widget using [@arcgis/core](https://www
 *style.css*
 
 ```css
-@import 'https://js.arcgis.com/4.23/@arcgis/core/assets/esri/themes/light/main.css';
+@import 'https://js.arcgis.com/4.25/@arcgis/core/assets/esri/themes/light/main.css';
 ```
 
 For additional information, see the [Build with ES modules](https://developers.arcgis.com/javascript/latest/es-modules/) Guide topic in the SDK.
